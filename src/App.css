@@ -1,38 +1,122 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.divTable {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 40em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header styling */
+.divBody {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.divBodyRow {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Image styling */
+.divBody img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Info rows styling */
+.divRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.divCellLabel {
+  flex: 1;
+  margin-right: 10px;
+  color: #555;
+}
+
+.divCellValue {
+  flex: 2;
+  font-weight: bold;
+}
+
+/* Abilities styling */
+.divAbilityName {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* Stats and Abilities styling */
+.divStatAbilities {
+  margin-top: 20px;
+}
+
+.divStatAbilitiesTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.divStatRow {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.divStatLabel {
+  flex: 1;
+  color: #555;
+}
+
+.divStatValue {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.divStatName {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Ability list styling */
+.divAbilityList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.divAbilityName {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin: 2px 5px;
+  font-size: 12px;
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Form styling */
+form {
+  text-align: center;
 }

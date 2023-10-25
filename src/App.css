@@ -2,10 +2,37 @@
   text-align: center;
 }
 
-.rootDiv {
+/* App.css */
 
-
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
 }
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
 .modalBox {
   background-color: aqua;
   height: 30%;
@@ -133,4 +160,85 @@ input[type="text"] {
 /* Form styling */
 form {
   text-align: center;
+}
+
+/* RandomDrink.css */
+
+.random-drink-container {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  height: 90vh; /* Set the height to 90% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-drink-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.get-drink-button:hover {
+  background-color: #0056b3;
+}
+
+.drink-name {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.drink-details {
+  display: flex;
+  align-items: center;
+}
+
+.drink-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.aspect-ratio-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 aspect ratio (adjust as needed) */
+  overflow: hidden;
+}
+
+.drink-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Set a fixed width */
+  height: 100%; /* Set a fixed height */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.drink-content {
+  flex: 1;
+  text-align: left;
+}
+
+.ingredients-list {
+  list-style: disc;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.drink-instructions {
+  font-size: 16px;
+  color: #333;
 }

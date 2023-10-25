@@ -1,6 +1,7 @@
 import Modal from "react-modal";
 import { useEffect, useState } from "react";
 
+
 const Poke = () => {
   const [pokemon, setPokemon] = useState("ditto")
   const [pokemonData, setPokemonData] = useState([])
@@ -10,7 +11,6 @@ const Poke = () => {
   const [showShiny, setShowShiny] = useState(false)
 
   useEffect(() => {
-    // Fetch data when the component mounts
     getPokemonData()
   }, []);
 

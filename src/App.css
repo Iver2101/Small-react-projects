@@ -242,3 +242,35 @@ form {
   font-size: 16px;
   color: #333;
 }
+
+
+/* CurrencyConverter.css */
+
+.currency-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.currency-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.currency-input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.currency-select {
+  padding: 5px;
+  margin: 5px;
+}
+
+.currency-label {
+  margin: 10px;
+  font-weight: bold;
+}

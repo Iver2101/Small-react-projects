@@ -16,10 +16,11 @@ const RandomDrink = () => {
       setLoading(true);
       setSearchResult(null); // Clear previous search results
   
-      const url = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
+      const url = 'http://api.exchangeratesapi.io/v1/2013-03-16?access_key=463e3a2f3462f2efd5a0fd4613cd9200&symbols=USD';
   
       try {
         const res = await axios.get(url);
+        console.log(res.data())
         setData(res.data.drinks[0]);
       } catch (e) {
         console.log(e);
